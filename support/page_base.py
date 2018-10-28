@@ -11,7 +11,6 @@ class BasePage(object):
         self.driver = driver
 
     def wait_for_loader_to_finish(self, timeout):
-
         timeout = timeout
         try:
             element_present = ec.presence_of_element_located((By.XPATH, "//div[contains(@style,'display')]"))
